@@ -1,0 +1,195 @@
+# 特殊节点配置文件
+# 定义节日、节气、特殊日期等信息
+# 格式：
+#   - date: MM-DD（月-日）
+#     name: 节点名称
+#     type: 节点类型（festival/solar_term/special）
+#     risk_level: 风险级别（high/medium/low）
+#     themes: 建议主题列表
+#     avoid_suggestions: 规避建议
+
+nodes:
+  # ===== 春节相关 =====
+  - date: "01-01"
+    name: "元旦"
+    type: festival
+    risk_level: low
+    themes: ["新年新气象", "展望未来", "年度总结", "新年计划"]
+    avoid_suggestions: ""
+
+  - date: "12-31"
+    name: "跨年夜"
+    type: festival
+    risk_level: low
+    themes: ["辞旧迎新", "新年愿望", "跨年活动"]
+    avoid_suggestions: ""
+
+  - date: "02-10"
+    name: "春节"
+    type: festival
+    risk_level: low
+    themes: ["团圆", "亲情", "传统习俗", "新年祝福"]
+    avoid_suggestions: "避免负面话题，保持积极正面的内容"
+
+  # ===== 清明节相关 =====
+  - date: "04-04"
+    name: "清明节"
+    type: festival
+    risk_level: medium
+    themes: ["缅怀先人", "感恩", "传统文化"]
+    avoid_suggestions: "避免娱乐化营销，保持庄重态度"
+
+  # ===== 劳动节相关 =====
+  - date: "05-01"
+    name: "劳动节"
+    type: festival
+    risk_level: low
+    themes: ["劳动者致敬", "工作与生活平衡", "劳动最光荣"]
+    avoid_suggestions: ""
+
+  # ===== 端午节相关 =====
+  - date: "06-22"
+    name: "端午节"
+    type: festival
+    risk_level: low
+    themes: ["传统文化", "龙舟精神", "家国情怀", "粽子"]
+    avoid_suggestions: ""
+
+  # ===== 中秋节相关 =====
+  - date: "09-29"
+    name: "中秋节"
+    type: festival
+    risk_level: low
+    themes: ["团圆", "赏月", "思乡", "传统文化"]
+    avoid_suggestions: ""
+
+  # ===== 国庆节相关 =====
+  - date: "10-01"
+    name: "国庆节"
+    type: festival
+    risk_level: low
+    themes: ["爱国", "国家发展", "美好生活", "旅行"]
+    avoid_suggestions: ""
+
+  # ===== 节气 =====
+  - date: "02-04"
+    name: "立春"
+    type: solar_term
+    risk_level: low
+    themes: ["新生", "开始", "春天", "希望"]
+    avoid_suggestions: ""
+
+  - date: "03-21"
+    name: "春分"
+    type: solar_term
+    risk_level: low
+    themes: ["平衡", "生长", "春天"]
+    avoid_suggestions: ""
+
+  - date: "06-21"
+    name: "夏至"
+    type: solar_term
+    risk_level: low
+    themes: ["热情", "盛夏", "活力"]
+    avoid_suggestions: ""
+
+  - date: "09-23"
+    name: "秋分"
+    type: solar_term
+    risk_level: low
+    themes: ["收获", "平衡", "秋天"]
+    avoid_suggestions: ""
+
+  - date: "12-22"
+    name: "冬至"
+    type: solar_term
+    risk_level: low
+    themes: ["团圆", "温暖", "传统"]
+    avoid_suggestions: ""
+
+  # ===== 特殊日期（高风险）=====
+  - date: "09-18"
+    name: "九一八事变纪念日"
+    type: special
+    risk_level: high
+    themes: ["铭记历史", "爱国", "勿忘国耻", "和平"]
+    avoid_suggestions: "严禁娱乐化营销，保持严肃态度，避免不当言论"
+
+  - date: "07-07"
+    name: "七七事变纪念日"
+    type: special
+    risk_level: high
+    themes: ["铭记历史", "爱国", "和平", "民族精神"]
+    avoid_suggestions: "严禁娱乐化营销，保持严肃态度"
+
+  - date: "12-13"
+    name: "国家公祭日"
+    type: special
+    risk_level: high
+    themes: ["铭记历史", "悼念", "和平", "爱国"]
+    avoid_suggestions: "严禁娱乐化营销，保持庄重肃穆"
+
+  # ===== 购物节 =====
+  - date: "06-18"
+    name: "618购物节"
+    type: special
+    risk_level: low
+    themes: ["促销", "购物", "消费升级", "品牌优惠"]
+    avoid_suggestions: ""
+
+  - date: "11-11"
+    name: "双11购物节"
+    type: special
+    risk_level: low
+    themes: ["促销", "购物", "消费", "品牌活动"]
+    avoid_suggestions: ""
+
+  # ===== 其他特殊日期 =====
+  - date: "03-08"
+    name: "妇女节"
+    type: festival
+    risk_level: low
+    themes: ["女性力量", "平等", "关爱女性", "自我成长"]
+    avoid_suggestions: "避免刻板印象，强调女性多元价值"
+
+  - date: "03-15"
+    name: "消费者权益日"
+    type: special
+    risk_level: medium
+    themes: ["诚信经营", "消费者权益", "品质保证"]
+    avoid_suggestions: "避免任何可能引发消费者质疑的内容"
+
+  - date: "05-04"
+    name: "青年节"
+    type: festival
+    risk_level: low
+    themes: ["青春", "梦想", "奋斗", "创新"]
+    avoid_suggestions: ""
+
+  - date: "06-01"
+    name: "儿童节"
+    type: festival
+    risk_level: low
+    themes: ["童心", "成长", "快乐", "亲子"]
+    avoid_suggestions: ""
+
+  - date: "08-15"
+    name: "七夕节"
+    type: festival
+    risk_level: low
+    themes: ["爱情", "浪漫", "传统文化", "表白"]
+    avoid_suggestions: ""
+
+  - date: "10-31"
+    name: "万圣节"
+    type: festival
+    risk_level: low
+    themes: ["创意", "趣味", "角色扮演", "惊喜"]
+    avoid_suggestions: "避免过度恐怖元素，保持轻松有趣"
+
+  - date: "12-25"
+    name: "圣诞节"
+    type: festival
+    risk_level: low
+    themes: ["祝福", "温暖", "礼物", "欢乐"]
+    avoid_suggestions: ""
